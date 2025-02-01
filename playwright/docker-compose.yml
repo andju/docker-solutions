@@ -1,0 +1,13 @@
+services:
+    playwright:
+        image: mcr.microsoft.com/playwright:v1.50.1-noble
+        container_name: playwright-container
+        ports:
+            - "3000:3000"  # Expose port 3000 on the host to port 3000 in the container
+        working_dir: /home/pwuser  # Set the working directory
+        user: pwuser  # Run the container as the user `pwuser`
+        init: true  # Enable init system
+        stdin_open: true  # Keep STDIN open for interactive sessions
+        tty: true  # Allocate a pseudo-TTY for interactive sessions
+        command: /bin/sh -c "npx -y playwright@1.50.1 run-server --port 3000 --host 0.0.0.0"  # Run the command to start the server
+        restart: no  # No restart, as the container should be removed after execution (as in `--rm` flag)

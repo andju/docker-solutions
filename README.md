@@ -10,5 +10,8 @@ On a windows host, an x server (like [VcXsrv](https://vcxsrv.com/)) is required.
 Run a paperless-ngx instance based on postgres together with pgadmin (based on [docker-compose.postgres-tika.yml](https://github.com/paperless-ngx/paperless-ngx/blob/main/docker/compose/docker-compose.postgres-tika.yml))
 The directories for data and media are pointing to the respective subdirectories on the host system.
 
+## playwright
+Run a playwright in server mode (based on [Docker | Playwright](https://playwright.dev/docs/docker#remote-connection))
+
 ## postgres
 Run a postgres database server with pgadmin.
