@@ -1,3 +1,10 @@
+# Fakturama (https://www.fakturama.info/) on linux with interface exposed
+# through x server. On a windows host, an x server (like https://vcxsrv.com/)
+# is required.
+# This file is considered a proof of concept. The resulting container will be
+# very large - consider using a virtual machine.
+# Based on https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde.
+
 FROM debian:bullseye-20230612-slim
 
 ENV DEBIAN_FRONTEND="noninteractive"
