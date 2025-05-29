@@ -1,3 +1,5 @@
+# Postgres database server (port 5432) with pgadmin (port 8888).
+
 services:
   db:
     image: postgres

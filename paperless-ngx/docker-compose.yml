@@ -1,3 +1,9 @@
+# paperless-ngx instance based on postgres together with pgadmin (port 8888).
+# The directories for data and media are pointing to the respective
+# subdirectories on the host system.
+# Based on https://github.com/paperless-ngx/paperless-ngx/blob/main/docker/compose/docker-compose.postgres-tika.yml.
+# It is licensed under the GPL-3.0 license.
+
 # Docker Compose file for running paperless from the docker container registry.
 # This file contains everything paperless needs to run.
 # Paperless supports amd64, arm and arm64 hardware.
